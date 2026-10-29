@@ -1,0 +1,391 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <!-- Sky & Twilight Gradients -->
+    <linearGradient id="twilightSky" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020612" />
+      <stop offset="45%" stop-color="#081426" />
+      <stop offset="85%" stop-color="#11233d" />
+      <stop offset="100%" stop-color="#1a3152" />
+    </linearGradient>
+
+    <!-- Warm Lobby Interior Glow -->
+    <linearGradient id="lobbyGlow" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffbe3b" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0c1d36" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Glass Facade Gradient -->
+    <linearGradient id="glassFacade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1f3b" />
+      <stop offset="50%" stop-color="#081428" />
+      <stop offset="100%" stop-color="#040b17" />
+    </linearGradient>
+
+    <!-- Window Light Gradients -->
+    <linearGradient id="windowWarm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#eab308" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="windowCool" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- Gold Brass Accents -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Dark Navy Uniform Gradient -->
+    <linearGradient id="navyUniform" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14213d" />
+      <stop offset="40%" stop-color="#0c172e" />
+      <stop offset="100%" stop-color="#060c18" />
+    </linearGradient>
+    <linearGradient id="navyUniformShade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080f1e" />
+      <stop offset="50%" stop-color="#121e38" />
+      <stop offset="100%" stop-color="#060a14" />
+    </linearGradient>
+
+    <!-- Skin Tone Gradients -->
+    <linearGradient id="skinTone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c68a4c" />
+      <stop offset="60%" stop-color="#a46d38" />
+      <stop offset="100%" stop-color="#7c4f24" />
+    </linearGradient>
+    <linearGradient id="skinToneOfficer2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b87a40" />
+      <stop offset="70%" stop-color="#935b29" />
+      <stop offset="100%" stop-color="#6f4219" />
+    </linearGradient>
+
+    <!-- Pavement Reflection -->
+    <linearGradient id="graniteFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="40%" stop-color="#090d18" />
+      <stop offset="100%" stop-color="#020612" />
+    </linearGradient>
+
+    <!-- Overall Atmospheric Vignette Overlay -->
+    <linearGradient id="cinematicVignette" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#020612" stop-opacity="0.95" />
+      <stop offset="35%" stop-color="#020612" stop-opacity="0.82" />
+      <stop offset="65%" stop-color="#020612" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#020612" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background Sky -->
+  <rect width="1920" height="1080" fill="url(#twilightSky)" />
+
+  <!-- 2. Distant Corporate Skyline Silhouettes -->
+  <g opacity="0.4">
+    <rect x="300" y="320" width="120" height="480" fill="#060f1e" />
+    <rect x="440" y="240" width="160" height="560" fill="#040b17" />
+    <rect x="620" y="380" width="110" height="420" fill="#071324" />
+    <rect x="750" y="180" width="180" height="620" fill="#030812" />
+    <!-- Distant Window dots -->
+    <rect x="460" y="270" width="6" height="8" fill="#fef08a" opacity="0.6" />
+    <rect x="480" y="270" width="6" height="8" fill="#fef08a" opacity="0.4" />
+    <rect x="520" y="310" width="6" height="8" fill="#38bdf8" opacity="0.5" />
+    <rect x="770" y="220" width="8" height="10" fill="#fef08a" opacity="0.7" />
+    <rect x="800" y="250" width="8" height="10" fill="#38bdf8" opacity="0.4" />
+    <rect x="840" y="220" width="8" height="10" fill="#fef08a" opacity="0.5" />
+    <rect x="770" y="300" width="8" height="10" fill="#fef08a" opacity="0.6" />
+    <rect x="820" y="340" width="8" height="10" fill="#fef08a" opacity="0.3" />
+  </g>
+
+  <!-- 3. Primary Modern Glass Corporate Building (Right & Midground) -->
+  <g id="corporateBuilding">
+    <!-- Main Tower Structure -->
+    <polygon points="980,0 1920,0 1920,840 980,840" fill="url(#glassFacade)" />
+
+    <!-- Architectural Curtain Wall Grid (Vertical Mullions) -->
+    <line x1="1060" y1="0" x2="1060" y2="840" stroke="#1e293b" stroke-width="3" />
+    <line x1="1160" y1="0" x2="1160" y2="840" stroke="#1e293b" stroke-width="3" />
+    <line x1="1280" y1="0" x2="1280" y2="840" stroke="#334155" stroke-width="4" />
+    <line x1="1420" y1="0" x2="1420" y2="840" stroke="#1e293b" stroke-width="3" />
+    <line x1="1560" y1="0" x2="1560" y2="840" stroke="#334155" stroke-width="4" />
+    <line x1="1700" y1="0" x2="1700" y2="840" stroke="#1e293b" stroke-width="3" />
+    <line x1="1820" y1="0" x2="1820" y2="840" stroke="#1e293b" stroke-width="3" />
+
+    <!-- Floor Dividers (Horizontal Spandrels) -->
+    <rect x="980" y="110" width="940" height="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect x="980" y="230" width="940" height="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect x="980" y="350" width="940" height="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect x="980" y="470" width="940" height="12" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <rect x="980" y="590" width="940" height="16" fill="#0a0f1d" stroke="#475569" stroke-width="2" />
+
+    <!-- Illuminated Executive Office Windows -->
+    <rect x="1070" y="130" width="80" height="90" fill="url(#windowWarm)" rx="3" />
+    <rect x="1170" y="130" width="100" height="90" fill="url(#windowCool)" rx="3" />
+    <rect x="1430" y="130" width="120" height="90" fill="url(#windowWarm)" rx="3" />
+    <rect x="1710" y="130" width="90" height="90" fill="url(#windowWarm)" rx="3" opacity="0.4" />
+
+    <rect x="1070" y="250" width="80" height="90" fill="url(#windowCool)" rx="3" opacity="0.7" />
+    <rect x="1290" y="250" width="120" height="90" fill="url(#windowWarm)" rx="3" />
+    <rect x="1570" y="250" width="120" height="90" fill="url(#windowCool)" rx="3" />
+
+    <rect x="1170" y="370" width="100" height="90" fill="url(#windowWarm)" rx="3" opacity="0.8" />
+    <rect x="1430" y="370" width="120" height="90" fill="url(#windowCool)" rx="3" />
+    <rect x="1710" y="370" width="90" height="90" fill="url(#windowWarm)" rx="3" />
+
+    <!-- Modern Grand Lobby Entrance (Double-height illuminated atrium) -->
+    <rect x="980" y="606" width="940" height="234" fill="url(#lobbyGlow)" />
+    <!-- Glass Lobby Panels -->
+    <g opacity="0.5">
+      <line x1="1100" y1="606" x2="1100" y2="840" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4 2" />
+      <line x1="1260" y1="606" x2="1260" y2="840" stroke="#64748b" stroke-width="2" />
+      <line x1="1450" y1="606" x2="1450" y2="840" stroke="#64748b" stroke-width="2" />
+      <line x1="1650" y1="606" x2="1650" y2="840" stroke="#64748b" stroke-width="2" />
+    </g>
+
+    <!-- Warm Architectural Canopy / Portico Overhang -->
+    <polygon points="940,610 1920,610 1920,626 940,634" fill="#1e293b" />
+    <polygon points="940,626 1920,626 1920,630 940,634" fill="#f59e0b" opacity="0.8" />
+    <!-- Spotlights under canopy -->
+    <circle cx="1120" cy="628" r="4" fill="#fef08a" />
+    <circle cx="1320" cy="628" r="4" fill="#fef08a" />
+    <circle cx="1520" cy="628" r="4" fill="#fef08a" />
+    <circle cx="1720" cy="628" r="4" fill="#fef08a" />
+  </g>
+
+  <!-- 4. Paved Granite Entrance Plaza Floor with Reflections -->
+  <polygon points="0,840 1920,840 1920,1080 0,1080" fill="url(#graniteFloor)" />
+  <line x1="0" y1="840" x2="1920" y2="840" stroke="#334155" stroke-width="2" />
+
+  <!-- Pavement Grid Joints & Subtle Lighting Reflections -->
+  <g opacity="0.25">
+    <line x1="100" y1="840" x2="0" y2="1080" stroke="#475569" stroke-width="1" />
+    <line x1="380" y1="840" x2="260" y2="1080" stroke="#475569" stroke-width="1" />
+    <line x1="680" y1="840" x2="590" y2="1080" stroke="#475569" stroke-width="1" />
+    <line x1="980" y1="840" x2="940" y2="1080" stroke="#475569" stroke-width="1.5" />
+    <line x1="1260" y1="840" x2="1280" y2="1080" stroke="#475569" stroke-width="1.5" />
+    <line x1="1560" y1="840" x2="1620" y2="1080" stroke="#475569" stroke-width="1.5" />
+    <line x1="1820" y1="840" x2="1900" y2="1080" stroke="#475569" stroke-width="1" />
+
+    <line x1="0" y1="910" x2="1920" y2="910" stroke="#334155" stroke-width="1" />
+    <line x1="0" y1="990" x2="1920" y2="990" stroke="#334155" stroke-width="1" />
+  </g>
+
+  <!-- Plaza Bollard Lights with Gold Halo -->
+  <g opacity="0.8">
+    <rect x="1020" y="810" width="12" height="40" fill="#334155" rx="2" />
+    <circle cx="1026" cy="812" r="14" fill="#f59e0b" opacity="0.15" />
+    <circle cx="1026" cy="812" r="4" fill="#fef08a" />
+
+    <rect x="1800" y="810" width="12" height="40" fill="#334155" rx="2" />
+    <circle cx="1806" cy="812" r="14" fill="#f59e0b" opacity="0.15" />
+    <circle cx="1806" cy="812" r="4" fill="#fef08a" />
+  </g>
+
+  <!-- 5. GUARD 2: Midground Sentinel (Position: x ~ 1160 - 1340, y ~ 420 - 1080) -->
+  <g id="guardOfficer2">
+    <!-- Shadow on Granite -->
+    <ellipse cx="1250" cy="1040" rx="95" ry="18" fill="#01040a" opacity="0.8" />
+
+    <!-- Legs & Navy Trousers -->
+    <polygon points="1205,790 1242,790 1238,1030 1200,1030" fill="#070d1a" />
+    <polygon points="1255,790 1292,790 1300,1030 1262,1030" fill="#0b1322" />
+    <!-- Polished Black Shoes -->
+    <polygon points="1195,1025 1245,1025 1248,1048 1190,1048" fill="#020408" rx="3" />
+    <polygon points="1260,1025 1310,1025 1318,1048 1260,1048" fill="#020408" rx="3" />
+
+    <!-- Torso / Dark Navy Tunic Uniform -->
+    <polygon points="1185,550 1315,550 1300,795 1195,795" fill="url(#navyUniformShade)" />
+    <!-- Uniform Seams & Creases -->
+    <line x1="1248" y1="560" x2="1248" y2="780" stroke="#050912" stroke-width="3" />
+
+    <!-- Leather Duty Belt with Gold Buckle -->
+    <rect x="1195" y="760" width="105" height="26" fill="#04070e" />
+    <rect x="1238" y="756" width="22" height="34" fill="url(#goldGradient)" rx="2" />
+    <rect x="1243" y="762" width="12" height="22" fill="#04070e" rx="1" />
+
+    <!-- Chest Pockets & Badges -->
+    <rect x="1202" y="615" width="38" height="42" fill="#08101e" stroke="#121e36" stroke-width="1.5" rx="2" />
+    <rect x="1255" y="615" width="38" height="42" fill="#08101e" stroke="#121e36" stroke-width="1.5" rx="2" />
+    <!-- Gold Nameplate & Crest -->
+    <rect x="1206" y="602" width="30" height="7" fill="url(#goldGradient)" rx="1" />
+    <polygon points="1274,600 1282,604 1282,614 1274,618 1266,614 1266,604" fill="url(#goldGradient)" />
+
+    <!-- Shoulders & Gold Epaulettes -->
+    <polygon points="1170,540 1205,532 1210,556 1172,562" fill="url(#goldGradient)" />
+    <polygon points="1328,540 1293,532 1288,556 1326,562" fill="url(#goldGradient)" />
+
+    <!-- Arms in Vigilant Posture (holding clipboard / communication unit) -->
+    <!-- Left Arm -->
+    <path d="M 1180,550 L 1155,690 L 1220,725 L 1220,685 L 1175,660 Z" fill="#091122" />
+    <!-- Right Arm -->
+    <path d="M 1320,550 L 1345,690 L 1270,725 L 1270,685 L 1325,660 Z" fill="#0e182e" />
+
+    <!-- Hands & Security Clipboard -->
+    <rect x="1215" y="675" width="68" height="90" fill="#1e293b" stroke="#334155" stroke-width="2" rx="3" />
+    <rect x="1225" y="690" width="48" height="65" fill="#f8fafc" opacity="0.9" rx="1" />
+    <line x1="1230" y1="702" x2="1265" y2="702" stroke="#0f172a" stroke-width="2" />
+    <line x1="1230" y1="712" x2="1260" y2="712" stroke="#0f172a" stroke-width="1.5" />
+    <line x1="1230" y1="722" x2="1265" y2="722" stroke="#0f172a" stroke-width="1.5" />
+    <!-- Hands -->
+    <ellipse cx="1215" cy="710" rx="10" ry="12" fill="url(#skinToneOfficer2)" />
+    <ellipse cx="1285" cy="710" rx="10" ry="12" fill="url(#skinToneOfficer2)" />
+
+    <!-- Collar & Tie -->
+    <polygon points="1230,530 1268,530 1262,565 1248,580 1236,565" fill="#ffffff" />
+    <polygon points="1244,555 1254,555 1256,660 1249,675 1242,660" fill="#050a14" />
+
+    <!-- Neck & Face -->
+    <polygon points="1235,510 1263,510 1268,542 1230,542" fill="url(#skinToneOfficer2)" />
+    <!-- Head / Jaw / Facial Structure -->
+    <path d="M 1222,460 C 1222,430 1276,430 1276,460 C 1276,488 1268,518 1249,522 C 1230,518 1222,488 1222,460 Z" fill="url(#skinToneOfficer2)" />
+    <!-- Ears -->
+    <ellipse cx="1220" cy="465" rx="5" ry="9" fill="url(#skinToneOfficer2)" />
+    <ellipse cx="1278" cy="465" rx="5" ry="9" fill="url(#skinToneOfficer2)" />
+    <!-- Hair & Trim -->
+    <path d="M 1222,455 C 1222,438 1235,424 1249,424 C 1263,424 1276,438 1276,455 Z" fill="#080c14" />
+    <!-- Facial Features (Confident, Stern, Disciplined) -->
+    <!-- Eyes -->
+    <ellipse cx="1236" cy="460" rx="3.5" ry="2" fill="#0a0502" />
+    <ellipse cx="1260" cy="460" rx="3.5" ry="2" fill="#0a0502" />
+    <!-- Eyebrows -->
+    <line x1="1231" y1="454" x2="1242" y2="455" stroke="#080c14" stroke-width="2.5" />
+    <line x1="1255" y1="455" x2="1266" y2="454" stroke="#080c14" stroke-width="2.5" />
+    <!-- Nose & Mustache/Mouth -->
+    <line x1="1248" y1="460" x2="1249" y2="475" stroke="#7a4b22" stroke-width="2" />
+    <path d="M 1240,484 C 1245,481 1253,481 1258,484" stroke="#080c14" stroke-width="2.5" fill="none" />
+    <line x1="1243" y1="492" x2="1255" y2="492" stroke="#5a3416" stroke-width="2" />
+
+    <!-- Security Beret with Gold Crest -->
+    <path d="M 1215,445 C 1215,415 1255,405 1285,420 C 1295,425 1285,448 1275,450 L 1220,450 Z" fill="#060c18" />
+    <!-- Beret Gold Badge -->
+    <polygon points="1236,430 1244,435 1244,445 1236,448 1228,445 1228,435" fill="url(#goldGradient)" />
+  </g>
+
+  <!-- 6. GUARD 1: Foreground Senior Security Commander (Position: x ~ 1400 - 1650, y ~ 320 - 1080) -->
+  <g id="seniorSecurityOfficer1">
+    <!-- Solid Ground Shadow -->
+    <ellipse cx="1540" cy="1055" rx="140" ry="24" fill="#010408" opacity="0.9" />
+
+    <!-- Trousers (Sharp tailored dark navy with clean creases) -->
+    <polygon points="1465,770 1528,770 1520,1045 1455,1045" fill="#081020" />
+    <polygon points="1545,770 1608,770 1625,1045 1560,1045" fill="#0e1930" />
+    <!-- Center Crease lines -->
+    <line x1="1488" y1="775" x2="1485" y2="1040" stroke="#162544" stroke-width="2" />
+    <line x1="1585" y1="775" x2="1595" y2="1040" stroke="#18294a" stroke-width="2" />
+
+    <!-- Polished Black Oxford Boots with Reflections -->
+    <path d="M 1445,1038 L 1525,1038 L 1530,1068 L 1440,1068 Z" fill="#030509" />
+    <ellipse cx="1485" cy="1042" rx="35" ry="3" fill="#ffffff" opacity="0.25" />
+    <path d="M 1555,1038 L 1635,1038 L 1645,1068 L 1555,1068 Z" fill="#030509" />
+    <ellipse cx="1600" cy="1042" rx="35" ry="3" fill="#ffffff" opacity="0.25" />
+
+    <!-- Torso: Executive Navy Blazer / Uniform Tunic -->
+    <polygon points="1430,470 1635,470 1620,780 1450,780" fill="url(#navyUniform)" />
+    <!-- Center Placket & Gold Buttons -->
+    <line x1="1534" y1="520" x2="1534" y2="760" stroke="#050912" stroke-width="4" />
+    <circle cx="1534" cy="550" r="5" fill="url(#goldGradient)" />
+    <circle cx="1534" cy="600" r="5" fill="url(#goldGradient)" />
+    <circle cx="1534" cy="650" r="5" fill="url(#goldGradient)" />
+    <circle cx="1534" cy="700" r="5" fill="url(#goldGradient)" />
+
+    <!-- Flap Pockets -->
+    <polygon points="1452,580 1515,580 1510,640 1455,640" fill="#0a1324" stroke="#1a2b4d" stroke-width="2" />
+    <polygon points="1555,580 1618,580 1615,640 1560,640" fill="#0a1324" stroke="#1a2b4d" stroke-width="2" />
+
+    <!-- Gold Insignia Badges & Medals -->
+    <!-- Left Chest ASIS Shield Crest -->
+    <g transform="translate(1468, 528)">
+      <polygon points="18,0 36,5 36,25 18,36 0,25 0,5" fill="url(#goldGradient)" />
+      <polygon points="18,4 32,8 32,23 18,32 4,23 4,8" fill="#081020" />
+      <polygon points="18,10 22,17 30,17 24,22 26,29 18,25 10,29 12,22 6,17 14,17" fill="url(#goldGradient)" />
+    </g>
+
+    <!-- Right Chest Officer Name Bar -->
+    <rect x="1562" y="534" width="45" height="10" fill="url(#goldGradient)" rx="1.5" />
+    <rect x="1565" y="536" width="39" height="6" fill="#02050c" rx="1" />
+
+    <!-- Shoulders & Heavy Gold Braided Epaulettes -->
+    <polygon points="1410,460 1465,445 1475,480 1415,490" fill="url(#goldGradient)" />
+    <circle cx="1455" cy="458" r="4" fill="#fef08a" />
+    <polygon points="1650,460 1595,445 1585,480 1645,490" fill="url(#goldGradient)" />
+    <circle cx="1605" cy="458" r="4" fill="#fef08a" />
+
+    <!-- Duty Belt with Heavy Gold Security Buckle & Accessories -->
+    <rect x="1448" y="740" width="170" height="34" fill="#04060c" />
+    <rect x="1516" y="734" width="36" height="46" fill="url(#goldGradient)" rx="3" />
+    <rect x="1524" y="742" width="20" height="30" fill="#04060c" rx="1.5" />
+    <!-- Radio Holster with Antenna on Left Hip -->
+    <rect x="1438" y="725" width="24" height="48" fill="#1e293b" rx="2" />
+    <line x1="1444" y1="725" x2="1440" y2="670" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Confident Arms (Dignified posture, hands clasping in front) -->
+    <!-- Left Arm -->
+    <path d="M 1425,475 L 1385,670 L 1490,735 L 1520,685 L 1445,640 Z" fill="#091326" />
+    <!-- Right Arm -->
+    <path d="M 1635,475 L 1675,670 L 1565,735 L 1540,685 L 1615,640 Z" fill="#101e3b" />
+    <!-- Clasped Hands -->
+    <ellipse cx="1520" cy="710" rx="24" ry="16" fill="url(#skinTone)" />
+    <line x1="1510" y1="702" x2="1530" y2="702" stroke="#683d16" stroke-width="2" />
+    <line x1="1510" y1="710" x2="1530" y2="710" stroke="#683d16" stroke-width="2" />
+    <line x1="1510" y1="718" x2="1528" y2="718" stroke="#683d16" stroke-width="2" />
+
+    <!-- Crisp White Collar & Black Tie -->
+    <polygon points="1510,442 1555,442 1550,488 1533,506 1518,488" fill="#ffffff" />
+    <polygon points="1528,472 1540,472 1544,610 1534,630 1524,610" fill="#040812" />
+
+    <!-- Neck -->
+    <polygon points="1518,416 1550,416 1554,455 1512,455" fill="url(#skinTone)" />
+
+    <!-- Head & Strong Jawline -->
+    <path d="M 1500,345 C 1500,310 1568,310 1568,345 C 1568,385 1558,426 1534,432 C 1510,426 1500,385 1500,345 Z" fill="url(#skinTone)" />
+    <!-- Ears -->
+    <ellipse cx="1498" cy="355" rx="6" ry="11" fill="url(#skinTone)" />
+    <ellipse cx="1570" cy="355" rx="6" ry="11" fill="url(#skinTone)" />
+
+    <!-- Hair, Sideburns & Clean Mustache -->
+    <path d="M 1500,340 C 1500,315 1515,302 1534,302 C 1553,302 1568,315 1568,340 Z" fill="#060910" />
+
+    <!-- Disciplined Facial Features -->
+    <!-- Eyes -->
+    <ellipse cx="1518" cy="346" rx="4.5" ry="2.5" fill="#0a0502" />
+    <circle cx="1519" cy="345" r="1" fill="#ffffff" />
+    <ellipse cx="1550" cy="346" rx="4.5" ry="2.5" fill="#0a0502" />
+    <circle cx="1551" cy="345" r="1" fill="#ffffff" />
+    <!-- Eyebrows -->
+    <line x1="1511" y1="338" x2="1525" y2="339" stroke="#060910" stroke-width="3" />
+    <line x1="1543" y1="339" x2="1557" y2="338" stroke="#060910" stroke-width="3" />
+    <!-- Nose -->
+    <line x1="1534" y1="344" x2="1535" y2="368" stroke="#75441b" stroke-width="2.5" />
+    <!-- Disciplined Mustache -->
+    <path d="M 1522,380 C 1530,375 1538,375 1546,380 C 1549,385 1519,385 1522,380 Z" fill="#060910" />
+    <!-- Mouth -->
+    <line x1="1526" y1="392" x2="1542" y2="392" stroke="#522e0f" stroke-width="2.5" />
+
+    <!-- Peak Cap / Officer Hat with Gold Band & Crest -->
+    <!-- Cap Crown -->
+    <path d="M 1485,325 C 1485,280 1582,280 1582,325 Z" fill="#0a1428" />
+    <!-- Gold Chin Strap Band -->
+    <rect x="1485" y="322" width="98" height="9" fill="url(#goldGradient)" rx="2" />
+    <circle cx="1490" cy="326" r="3" fill="#fef08a" />
+    <circle cx="1578" cy="326" r="3" fill="#fef08a" />
+    <!-- Large Gold ASIS Eagle / Star Cap Crest -->
+    <g transform="translate(1523, 290)">
+      <polygon points="11,0 22,11 22,24 11,30 0,24 0,11" fill="url(#goldGradient)" />
+      <circle cx="11" cy="14" r="5" fill="#050a16" />
+      <polygon points="11,10 13,14 17,14 14,17 15,21 11,19 7,21 8,17 5,14 9,14" fill="url(#goldGradient)" />
+    </g>
+    <!-- Black Patent Leather Visor with Reflection -->
+    <path d="M 1480,330 C 1495,350 1572,350 1588,330 C 1580,342 1488,342 1480,330 Z" fill="#020408" />
+    <path d="M 1495,334 C 1515,342 1555,342 1572,334" stroke="#ffffff" stroke-width="1.5" opacity="0.3" fill="none" />
+  </g>
+
+  <!-- 7. Ambient Lighting Overlay (Warm Architectural Golden Uplight + Lens Flare) -->
+  <circle cx="1800" cy="780" r="280" fill="#f59e0b" opacity="0.08" />
+  <circle cx="1530" cy="600" r="350" fill="#38bdf8" opacity="0.05" />
+
+  <!-- 8. Heavy Left-to-Center Dark Navy & Black Gradient Vignette for Guaranteed Text Contrast -->
+  <rect width="1920" height="1080" fill="url(#cinematicVignette)" />
+</svg>

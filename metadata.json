@@ -1,0 +1,6 @@
+{
+  "name": "Assam Security Intelligent Service",
+  "description": "Professional private security and facility management solutions in Assam. Offering manned guarding, corporate, industrial, and residential protection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
